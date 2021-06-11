@@ -120,7 +120,13 @@ def three(input):
 
 
 def four(input):
-    return False
+	for char in range(len(input) -1):
+		if input[char] == "e" and input[char-1] == "c":
+			if input[char+1] == "i":
+				return True
+		elif input[char] == "i" and input[char+1] == "e" and input[char-1] != "c":
+			return True
+	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
