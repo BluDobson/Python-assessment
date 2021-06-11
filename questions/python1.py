@@ -37,7 +37,7 @@
 
 def one(input1, input2):
 	if len(input1) == len(input2):
-		return input1 + input2
+		return f"{input1} {input2}"
 	elif len(input1) > len(input2):
 		return input1
 	else:
@@ -95,9 +95,9 @@ def three(input):
 	vowels = "aeiou"
 	v_c = 0
 	for char in s:
-		if char in vowls:
+		if char in vowels:
 			v_c += 1
-    return v_c
+	return v_c
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
