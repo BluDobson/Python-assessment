@@ -235,7 +235,19 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	l = []
+	s = 0
+	max_s = 0
+	for n in arg1.split():
+		if n.isdigit():
+			l.append(n)
+	for num in range(len(l)):
+		for char in l[num]:
+			s += int(char)
+		if s > max_s:
+			max_s = s 
+		s = 0
+	return max_s
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
