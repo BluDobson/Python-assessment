@@ -202,6 +202,12 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
+	l = list(inputString)
+	while l.count(" ") > 0:
+		l.remove(" ")
+	for c in range(len(l)):
+		if l[c] == char:
+			return c + 1
 	return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
